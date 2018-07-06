@@ -1,0 +1,35 @@
+<html>
+<Head>
+<Title>Emmanuels tutorial on phython</title>
+<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</Head>
+<body>
+<a href="index.html">Home</a>
+
+<div class="guess-number">
+import random
+name=str(input("what is yor name?"))
+
+correctAnswer= random.randint(1, 100)
+
+guess=int(input("guess a guess between 1 to 100"))
+while not guess == correctAnswer:
+  if guess < correctAnswer:
+    print("too low")
+  elif guess > correctAnswer:
+    print("too high")
+  guess=int(input("try again"))
+
+print("correct")
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
